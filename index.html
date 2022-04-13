@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Description</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="image">Hover over the image to display image details</p>
-    <img src="Images/Ferrrai 2002.jpg" alt="Ferrari's Car 2002 Michael Schummacher's Car">
-    <img src="Images/Felipe_Massa_Ferrari_Bahrain_2010_GP.jpg" alt="Fellipe Massa's Car Baharain GP 2010 Car">
-    <img src="Images/Sebastian_Vettel_2015_Malaysia_FP2_3.jpg" alt="Sebastian Vettel's Car Malasiyan GP 2015">
-    <img src="Images/FIA_F1_Austria_2018_Nr._5_Vettel.jpg" alt="Sebastian Vettel's Car Austrian GP 2018">
-    <img src="Images/carlos-sainz-jr-ferrari-f1-75-.jpg" alt="Carlos Sianz's Car Spanish GP 2022">
+    <div id="div_2">
+        <p id="image">Hover over the image to display image details</p>
+    </div>
+    <div id="div_1">
+    <img id="Image_1" src="Images/Ferrrai 2002.jpg" alt="Ferrari's Car 2002 Michael Schummacher's Car" onmouseover = "display(this)" onmouseout = "display_revert()">
+    <img id="Image_2" src="Images/Felipe_Massa_Ferrari_Bahrain_2010_GP.jpg" alt="Fellipe Massa's Car Baharain GP 2010 Car" onmouseover = "display(this)" onmouseout = "display_revert()">
+    <img id="Image_3" src="Images/Sebastian_Vettel_2015_Malaysia_FP2_3.jpg" alt="Sebastian Vettel's Car Malasiyan GP 2015" onmouseover = "display(this)" onmouseout = "display_revert()">
+    <img id="Image_4" src="Images/FIA_F1_Austria_2018_Nr._5_Vettel.jpg" alt="Sebastian Vettel's Car Austrian GP 2018" onmouseover = "display(this)" onmouseout = "display_revert()">
+    <img id="Image_5" src="Images/carlos-sainz-jr-ferrari-f1-75-.jpg" alt="Carlos Sianz's Car Spanish GP 2022" onmouseover = "display(this)" onmouseout = "display_revert()">
+</div>
     <script>
         function display(element){
-            document.getElementById9('image').innerHTML = element.alt;
+            document.getElementById('image').innerHTML = element.alt;
         }
         function display_revert(){
-            document.getElementById('image').innerHTML = "Hover over the Image To display image details.";
+            document.getElementById('image').innerHTML = "Hover over the Image to display image details.";
         }
     </script>
 </body>
