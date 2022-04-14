@@ -8,12 +8,26 @@
     <div id="div_2">
         <p id="image">Hover over the image to display image details</p>
     </div>
-    <div id="div_1">
-    <img id="Image_1" src="Images/Ferrrai 2002.jpg" alt="Ferrari's Car 2002 Michael Schummacher's Car" onmouseover = "display(this)" onmouseout = "display_revert()">
-    <img id="Image_2" src="Images/Felipe_Massa_Ferrari_Bahrain_2010_GP.jpg" alt="Fellipe Massa's Car Baharain GP 2010 Car" onmouseover = "display(this)" onmouseout = "display_revert()">
-    <img id="Image_3" src="Images/Sebastian_Vettel_2015_Malaysia_FP2_3.jpg" alt="Sebastian Vettel's Car Malasiyan GP 2015" onmouseover = "display(this)" onmouseout = "display_revert()">
-    <img id="Image_4" src="Images/FIA_F1_Austria_2018_Nr._5_Vettel.jpg" alt="Sebastian Vettel's Car Austrian GP 2018" onmouseover = "display(this)" onmouseout = "display_revert()">
-    <img id="Image_5" src="Images/carlos-sainz-jr-ferrari-f1-75-.jpg" alt="Carlos Sianz's Car Spanish GP 2022" onmouseover = "display(this)" onmouseout = "display_revert()">
+    <div class="div_1" id="div_1">
+        <div class="slider" id="slider">
+            <input type="radio" name="silde" id="Image_1">
+            <input type="radio" name="silde" id="Image_2">
+            <input type="radio" name="silde" id="Image_3">
+            <input type="radio" name="silde" id="Image_4">
+            <input type="radio" name="silde" id="Image_5">
+          <img  class="m1" src="Images/Ferrrai 2002.jpg" alt="Ferrari's Car 2002 Michael Schummacher's Car" onmouseover = "display(this)" onmouseout = "display_revert()">
+          <img  class="m2" src="Images/Felipe_Massa_Ferrari_Bahrain_2010_GP.jpg" alt="Fellipe Massa's Car Baharain GP 2010 Car" onmouseover = "display(this)" onmouseout = "display_revert()">
+          <img  class="m3" src="Images/Sebastian_Vettel_2015_Malaysia_FP2_3.jpg" alt="Sebastian Vettel's Car Malasiyan GP 2015" onmouseover = "display(this)" onmouseout = "display_revert()">
+          <img  class="m4" src="Images/FIA_F1_Austria_2018_Nr._5_Vettel.jpg" alt="Sebastian Vettel's Car Austrian GP 2018" onmouseover = "display(this)" onmouseout = "display_revert()">
+          <img id="Image_5" class="m5" src="Images/carlos-sainz-jr-ferrari-f1-75-.jpg" alt="Carlos Sianz's Car Spanish GP 2022" onmouseover = "display(this)" onmouseout = "display_revert()">
+        </div>
+        <div class="dots"  id="dots">
+            <label for="Image_1"></label>
+            <label for="Image_2"></label>
+            <label for="Image_3"></label>
+            <label for="Image_4"></label>
+            <label for="Image_5"></label>
+        </div>
 </div>
     <script>
         function display(element){

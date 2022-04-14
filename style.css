@@ -1,118 +1,66 @@
 *{
-    margin: 0%;
-    padding: 0%;
+      box-sizing: border-box;
+       margin: 0;
+       padding: 0;
 }
-body{
-    background-color: #ff3d3d;
+body{  
+       justify-content: center;
+       align-items: center;
+       display: flex;
 }
-#image{
-    border-style: dashed;
-    border-radius: 50px;
-    margin-top: 2%;
-    margin-left: 35%;
-    width: 650px;
-    height: 70px;
-    background-repeat: no-repeat;
-    color:white;
-    background-size: 100%;
-    font-size: 150%;
-    line-height: 60px;
-    text-align: center;
-    font-family: Century Gothic;
+p{
+       margin-left: 65%;
+       margin-top: 200%;
+       align-items: center;
+       justify-content: center;
 }
-#div_1{
-    align-content: center;
-    margin-top: 2%;
-    float: left;
-    animation: 20s jayden infinite;
+.div_1{
+       position:relative;
+       width: 90%;
+       overflow: hidden ;
 }
-#Image_1{
-  position: absolute;
-  height: auto;
-  width: 100%;
+.slider{
+       display: flex;
+       width: 100%;
 }
-#Image_2{
-    position: absolute;
-    height: auto;
-    width: 100%;
+.slider img{
+       height : 100%;
+       width: 100%;
+       margin: 5px;
+       transition: all 0.15s ease;
 }
-#Image_3{
-    position: absolute;
-    height: auto;
-    width: 100%;
+.slider input{
+       display: none;
 }
-#Image_4{
-    position: absolute;
-    height: auto;
-    width: 100%;
+.dots{
+       display: flex;
+       justify-content: center;
+       margin: 5px;
 }
-#Image_5{
-    position: absolute;
-    height: auto;
-    width: 100%;
+.dots label{
+       height: 20px;
+       width: 20px;
+       border-radius: 50%;
+       border: solid #000;
+       cursor: pointer;
+       transition: all 0.5s ease;
+       margin: 5px;
 }
-@keyframes jayden{
-    0%{
-           left: -100%;
-    }
-    5%{
-           left: -100%;
-     
-    }
-    10%{
-           left: -0%;
-    }
-    15%{
-           left: -0%;
-    }
-    20%{
-           left: -100%;
-    }
-    25%{
-           left: -100%;
-    }
-    30%{
-           left: -200%;
-    }
-    35%{
-           left: -200%;
-    }
-    40%{
-           left: -300%;
-    }
-    45%{
-           left: -300%;
-    }
-    50%{
-           left: -400%;
-    }
-    55%{
-           left: -400%;
-    }
-    60%{
-           left: -300%;
-    }
-    65%{
-           left: -300%;
-    }
-    70%{
-           left: -200%;
-    }
-    75%{
-           left: -200%;
-    }
-    80%{
-           left: -100%;
-    }
-    85%{
-           left: -100%;
-    }
-    90%{
-           left: -0%;
-    }
-    95%{
-           left: -0%;
-    }
-    100%{
-           left: -100%;
-    }
+.dots label:hover {
+       background: #000;
+}
+#Image_1:checked ~ .m1{
+       margin-left: 0;
+}
+#Image_2:checked ~ .m2{
+       margin-left: -100%;
+}
+#Image_3:checked ~ .m3{
+       margin-left: -200%;
+}
+#Image_4:checked ~ .m4{
+       margin-left: -300%;
+}
+#Image_5:checked ~ .m5{
+       margin-left: -400%;
+}
