@@ -8,5 +8,5 @@ page.
 
 I have added some Images of The project
 
-<img src =".jpg">
-<img src =" .jpg">
+<img src ="Images/Snapshot_project.jpg">
+<img src ="Images/Snapshot_project(2).jpg">
