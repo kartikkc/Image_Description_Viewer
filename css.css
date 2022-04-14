@@ -1,0 +1,99 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #ff3d3d;
+}
+#image{
+    border-style: dashed;
+    border-radius: 50px;
+    margin-top: 2%;
+    margin-left: 35%;
+    width: 650px;
+    height: 70px;
+    background-repeat: no-repeat;
+    color:white;
+    background-size: 100%;
+    font-size: 150%;
+    line-height: 60px;
+    text-align: center;
+    font-family: Century Gothic;
+}
+#div_1{
+    align-content: center;
+    margin-top: 2%;
+    float: left;
+    animation: 20s jayden infinite;
+}
+#Image_1{
+  position: absolute;
+  height: auto;
+  width: 100%;
+}
+#Image_2{
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+#Image_3{
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+#Image_4{
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+#Image_5{
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+
+
+
+
+.slider img{
+    position: absolute
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+    transition: all 0.15s ease;
+}
+.slider input{
+    display: none;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #000;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 5px;
+}
+.dots label:hover {
+    background: #000;
+}
+#Image_1:checked ~ .m1{
+    margin-left: 0;
+}
+#Image_2:checked ~ .m2{
+    margin-left: -100%;
+}
+#Image_3:checked ~ .m3{
+    margin-left: -200%;
+}
+#Image_4:checked ~ .m4{
+    margin-left: -300%;
+}
+#Image_5:checked ~ .m5{
+    margin-left: -400%;
+}
