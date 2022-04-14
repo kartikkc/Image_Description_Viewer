@@ -8,26 +8,44 @@
     <div id="div_2">
         <p id="image">Hover over the image to display image details</p>
     </div>
-    <div class="div_1" id="div_1">
-        <div class="slider" id="slider">
-            <input type="radio" name="silde" id="Image_1">
-            <input type="radio" name="silde" id="Image_2">
-            <input type="radio" name="silde" id="Image_3">
-            <input type="radio" name="silde" id="Image_4">
-            <input type="radio" name="silde" id="Image_5">
-          <img  class="m1" src="Images/Ferrrai 2002.jpg" alt="Ferrari's Car 2002 Michael Schummacher's Car" onmouseover = "display(this)" onmouseout = "display_revert()">
-          <img  class="m2" src="Images/Felipe_Massa_Ferrari_Bahrain_2010_GP.jpg" alt="Fellipe Massa's Car Baharain GP 2010 Car" onmouseover = "display(this)" onmouseout = "display_revert()">
-          <img  class="m3" src="Images/Sebastian_Vettel_2015_Malaysia_FP2_3.jpg" alt="Sebastian Vettel's Car Malasiyan GP 2015" onmouseover = "display(this)" onmouseout = "display_revert()">
-          <img  class="m4" src="Images/FIA_F1_Austria_2018_Nr._5_Vettel.jpg" alt="Sebastian Vettel's Car Austrian GP 2018" onmouseover = "display(this)" onmouseout = "display_revert()">
-          <img id="Image_5" class="m5" src="Images/carlos-sainz-jr-ferrari-f1-75-.jpg" alt="Carlos Sianz's Car Spanish GP 2022" onmouseover = "display(this)" onmouseout = "display_revert()">
+    <div class="slider" id="div_1" >
+        <div class="slides" id="slider">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <div class="slide first">
+                <img   src="Images/img1.jpg" alt="Carlos Sianz's Car Spanish GP 2022" onmouseover = "display(this)" onmouseout = "display_revert()">
+            </div>
+            <div class="slide">
+             <img   src="Images/img2.jpg" alt="Fellipe Massa's Car Baharain GP 2010 Car" onmouseover = "display(this)" onmouseout = "display_revert()">
+           </div>
+           <div class="slide">
+             <img   src="Images/img3.jpg" alt="Sebastian Vettel's Car Malasiyan GP 2015" onmouseover = "display(this)" onmouseout = "display_revert()">
+           </div>
+           <div class="slide">
+             <img   src="Images/img4.jpg" alt="Sebastian Vettel's Car Austrian GP 2018" onmouseover = "display(this)" onmouseout = "display_revert()">
+           </div>
+           <div class="slide">
+            <img   src="Images/Ferrrai 2002.jpg" alt="Ferrari's Car 2002 Michael Schummacher's Car" onmouseover = "display(this)" onmouseout = "display_revert()">
+             
+           </div>
+          <div class="navigation-auto">
+             <div class="auto-btn1"></div>
+             <div class="auto-btn2"></div>
+             <div class="auto-btn3"></div>
+             <div class="auto-btn4"></div>
+             <div class="auto-btn5"></div>
+          </div>
         </div>
-        <div class="dots"  id="dots">
-            <label for="Image_1"></label>
-            <label for="Image_2"></label>
-            <label for="Image_3"></label>
-            <label for="Image_4"></label>
-            <label for="Image_5"></label>
-        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+          </div>
 </div>
     <script>
         function display(element){
@@ -36,6 +54,14 @@
         function display_revert(){
             document.getElementById('image').innerHTML = "Hover over the Image to display image details.";
         }
+        var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 5){
+        counter = 1;
+      }
+    }, 5000);
     </script>
 </body>
 </html>
