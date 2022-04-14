@@ -127,9 +127,19 @@ body{
             margin-top: 35%;
             margin-left: 0%;
             border-radius: 20px;
-            border-style: dashed;
+            border-style: dotted;
             border-color: #FFFBE7;
             background-color: #E78EA9;
             font-family: Century Gothic;
+            font-size: x-large;
             color: aliceblue;
+       }
+       #heading{
+              justify-content: center;
+              align-items: center;
+              margin-top: -40%;
+              position: absolute;
+              font-size: 60px;
+              font-family: Century Gothic;
+              color: #E78EA9;
        }

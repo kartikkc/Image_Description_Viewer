@@ -5,8 +5,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="heading">
+        Image Description With Slider
+    </div>
     <div id="div_2">
-        <p id="image">Hover over the image to display image details</p>
+        <p id="image">Hover the image to display image details. (deatils of the 5 of seven wonders of world)</p>
     </div>
     <div class="slider" id="div_1" >
         <div class="slides" id="slider">
@@ -16,19 +19,19 @@
             <input type="radio" name="radio-btn" id="radio4">
             <input type="radio" name="radio-btn" id="radio5">
             <div class="slide first">
-                <img   src="Images/img1.jpg" alt="Carlos Sianz's Car Spanish GP 2022" onmouseover = "display(this)" onmouseout = "display_revert()">
+                <img   src="Images/img1.jpg" alt="Christ the Redimeer, Rio de Janerio" onmouseover = "display(this)" onmouseout = "display_revert()">
             </div>
             <div class="slide">
-             <img   src="Images/img2.jpg" alt="Fellipe Massa's Car Baharain GP 2010 Car" onmouseover = "display(this)" onmouseout = "display_revert()">
+             <img   src="Images/img2.jpg" alt="Eiffel Tower, Paris" onmouseover = "display(this)" onmouseout = "display_revert()">
            </div>
            <div class="slide">
-             <img   src="Images/img3.jpg" alt="Sebastian Vettel's Car Malasiyan GP 2015" onmouseover = "display(this)" onmouseout = "display_revert()">
+             <img   src="Images/img3.jpg" alt="Taj Mahal, Agra" onmouseover = "display(this)" onmouseout = "display_revert()">
            </div>
            <div class="slide">
-             <img   src="Images/img4.jpg" alt="Sebastian Vettel's Car Austrian GP 2018" onmouseover = "display(this)" onmouseout = "display_revert()">
+             <img   src="Images/img4.jpg" alt="Machu Pichu, Peru" onmouseover = "display(this)" onmouseout = "display_revert()">
            </div>
            <div class="slide">
-            <img   src="Images/Ferrrai 2002.jpg" alt="Ferrari's Car 2002 Michael Schummacher's Car" onmouseover = "display(this)" onmouseout = "display_revert()">
+            <img   src="Images/img5.jpg" alt="Great Pyramid, Giza" onmouseover = "display(this)" onmouseout = "display_revert()">
              
            </div>
           <div class="navigation-auto">
@@ -52,7 +55,7 @@
             document.getElementById('image').innerHTML = element.alt;
         }
         function display_revert(){
-            document.getElementById('image').innerHTML = "Hover over the Image to display image details.";
+            document.getElementById('image').innerHTML = "Hover over the Image to display image details. (Deatils of the 5 of seven wonders of world)";
         }
         var counter = 1;
     setInterval(function(){
